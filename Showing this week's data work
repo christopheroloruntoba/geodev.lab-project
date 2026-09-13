@@ -1,19 +1,19 @@
-Digital Elevation Model. 19.5mb
+## Digital Elevation Model. 19.5mb
 https://portal.opentopography.org/rasterOutput?jobId=rt1789141787279 
-Dataset Citation
+# Dataset Citation
 European Space Agency (2024). Copernicus Global Digital Elevation Model. Distributed by OpenTopography. https://doi.org/10.5069/G9028PQB. Accessed 2026-09-13 
 Horizontal Coordinates
 WGS84 [EPSG: 4326]
 Vertical Coordinates
 WGS84 Ellipsoid/EGM2008 Geoid [EPSG: 3855]
 
-Data Selection Coordinates
+# Data Selection Coordinates
 Xmin, Ymin
 3.407135009765624, 7.2381018034164555
 Xmax, Ymax
 4.187164306640625, 7.744603898219822
 
-Raster Input & Output Options:
+# Raster Input & Output Options:
 Data Type
 Global
 Output Format
@@ -22,7 +22,7 @@ GeoTiff
 
 
 
-GRID3 NGA - Operational Wards v3. 128mb
+## GRID3 NGA - Operational Wards v3. 128mb
 https://data.grid3.org/datasets/GRID3::grid3-nga-operational-wards-v3-0/about 
 The GRID3 NGA - Operational Wards v3.0 dataset provides operational ward boundary polygons for 24 states in Nigeria: Abia, Adamawa, Bauchi, Bayelsa, Borno, Delta, Enugu, FCT Abuja, Gombe, Jigawa, Kaduna, Kano, Katsina, Kebbi, Kogi, Kwara, Nasarawa, Niger, Ogun, Osun, Oyo, Sokoto, Yobe, and Zamfara. These boundaries are intended for operational use and have not yet undergone full validation by relevant government authorities.
 • Version 3.0 supersedes v2.0 for Adamawa, Bauchi, Bayelsa, Borno, Delta, Gombe, Jigawa, Kano, Katsina, Kwara, Ogun, Osun, Oyo, and Yobe. 
@@ -32,6 +32,6 @@ The GRID3 NGA - Operational Wards v3.0 dataset provides operational ward boundar
 
 
 
-GRID3 NGA - Settlement Extents v4. 1.9 GB
+## GRID3 NGA - Settlement Extents v4. 1.9 GB
 https://data.grid3.org/datasets/GRID3::grid3-nga-settlement-extents-v4-1/about 
 The GRID3 NGA - Settlement Extents v4.1 dataset consists of a geographic representation of settlements in Nigeria. Settlement extents are further delineated into settlement blocks nested within urban and small settlement areas, generated from integrated road, railway, river, building footprints, and remote-sensing inputs. Each block is enriched with morphological, environmental, and building metrics.
