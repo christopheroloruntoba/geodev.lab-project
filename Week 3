@@ -1,1 +1,233 @@
 
+Week 3 Data Preparation and Quality Checks
+
+Project
+
+Research question:
+Which settlements in Ibadan North Local Government Area sit in low-lying land within 200 metres of a watercourse?
+
+Study area: Ibadan North LGA, Oyo State, Nigeria
+
+
+
+1. Working CRS
+
+Chosen CRS: WGS 84 / UTM Zone 31N — EPSG:32631
+
+EPSG:32631 was selected as the working coordinate reference system because the study area is in southwestern Nigeria and falls within UTM Zone 31N. The projected CRS provides coordinates in metres, which is appropriate for distance-based analysis such as the 200 m watercourse buffer and for measuring areas and distances.
+
+The original Copernicus DEM is supplied in geographic WGS 84 (EPSG:4326), so it was reprojected to the selected working CRS before analysis.
+
+---
+
+2. Data Reprojected and Clipped
+
+The following datasets were prepared for the Ibadan North study area:
+
+2.1 GRID3 Operational Wards
+
+Source: GRID3 NGA – Operational Wards v3.0
+
+Original data type: Vector polygon
+
+Original CRS: TBC — verified from the downloaded layer in QGIS
+
+Working CRS: EPSG:32631
+
+Preparation:
+The ward layer was reprojected to EPSG:32631 and clipped/extracted to the Ibadan North LGA study area.
+
+Final geometry: Polygon
+
+Feature count after clipping: 
+
+Key fields: 
+
+Missing values: 
+
+---
+
+2.2 GRID3 Settlement Extents
+
+Source: GRID3 NGA – Settlement Extents v4.1
+
+The dataset represents settlement extents and settlement blocks derived from road, railway, river, building-footprint and remote-sensing inputs.
+
+Original data type: Vector polygon
+
+Original CRS: TBC — verified from the downloaded layer in QGIS
+
+Working CRS: EPSG:32631
+
+Preparation:
+Settlement polygons were reprojected to EPSG:32631 and clipped to the Ibadan North LGA study area.
+
+Final geometry: Polygon
+
+Feature count after clipping: 
+
+Key fields: 
+
+Missing values: 
+
+
+
+2.3 Watercourses
+
+Source: OpenStreetMap / watercourse data
+
+Original data type: Vector line
+
+Original CRS: 
+
+Working CRS: EPSG:32631
+
+Preparation:
+Watercourse features were reprojected to EPSG:32631 and clipped to the Ibadan North study area.
+
+Final geometry: LineString/MultiLineString —  from QGIS
+
+Feature count after clipping: 
+
+Key fields: 
+
+Missing values: 
+
+
+
+2.4 Copernicus Digital Elevation Model
+
+Source: Copernicus Global Digital Elevation Model, distributed through OpenTopography.
+
+The repository records the Copernicus DEM citation and identifies the horizontal CRS as WGS 84 / EPSG:4326 and the output format as GeoTIFF.
+
+Original data type: Raster
+
+Original horizontal CRS: EPSG:4326
+
+Working CRS: EPSG:32631
+
+Preparation:
+The DEM was reprojected to EPSG:32631 and clipped/masked to the Ibadan North study area.
+
+Final format: GeoTIFF
+
+Raster resolution:  — verified from the downloaded raster properties
+
+NoData value: 
+
+Raster extent after clipping: 
+
+
+
+3. Five Quality Checks
+
+Quality Check 1 — CRS Consistency
+
+Check performed:
+The CRS of every prepared layer was checked in QGIS Layer Properties.
+
+Expected result:
+All analysis-ready layers should use EPSG:32631.
+
+Result: 
+
+Decision:
+— confirm that all final layers are in EPSG:32631.
+
+
+Quality Check 2 — Study Area / Extent
+
+Check performed:
+Each prepared dataset was checked against the Ibadan North LGA study boundary to ensure that features outside the study area were removed.
+
+Result: 
+
+Problems found:
+
+Action taken:
+
+Decision:
+
+
+Quality Check 3 — Geometry Validity
+
+Check performed:
+Vector layers were checked using QGIS Check Validity / geometry validation tools.
+
+The check covered:
+
+- Invalid polygons
+- Self-intersections
+- Geometry errors
+- Empty geometries
+
+Result: 
+
+Problems found: 
+
+Action taken: 
+
+Decision: 
+
+
+
+Quality Check 4 — Duplicate Features
+
+Check performed:
+Attribute tables were examined for duplicate features/records using the relevant identifier fields.
+
+Result: 
+
+Problems found: 
+
+Action taken: 
+
+Decision: 
+
+
+Quality Check 5 — Missing Values / NoData
+
+Vector data:
+Key identifier and descriptive fields were checked for NULL or blank values.
+
+Raster data:
+The DEM was checked for NoData cells and unexpected gaps within the study area.
+
+Result: 
+
+Problems found: 
+
+Action taken: 
+
+Decision:
+
+---
+
+4. Problems Found and Decisions
+
+
+Any data-quality problem that could affect the analysis was either corrected during preparation or explicitly flagged for consideration during analysis.
+
+
+5. Analysis-Ready Data
+
+The final analysis-ready data are stored in a GeoPackage so that the prepared vector layers can be kept together in a single spatial database.
+
+GeoPackage:
+
+
+
+Expected layers
+
+- "ibadan_north_boundary"
+- "settlements"
+- "watercourses"
+
+The prepared DEM is stored as the analysis-ready raster:
+
+"data/copernicus_dem_ibadan_north_utm31n.tif"
+
+All final spatial data use the selected working CRS:
+
+EPSG:32631 — WGS 84 / UTM Zone 31N
