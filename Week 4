@@ -1,0 +1,37 @@
+# Month 1 Summary
+
+## Question
+
+How can spatial analysis be used to identify and understand the spatial relationship between the selected features in my study area?
+
+## Spatial Operation
+
+I will perform a buffer analysis using my data in a projected coordinate reference system (CRS).
+
+I chose buffer analysis because it allows me to create a defined distance around selected features and identify features that fall within that distance.
+
+## Expected Result
+
+Before running the analysis, I expect the output to contain approximately the same number of features as the input features, depending on whether overlapping features are dissolved.
+
+I also expect the buffer distance to be measured correctly in metres because the analysis will be performed using a projected CRS.
+
+## Quality Checks
+
+I will check the result in four ways:
+
+Visually inspect the buffer on the map.
+Compare the output feature count with the expected count.
+Manually verify at least one feature.
+Check for empty or invalid geometries.
+Result
+
+The spatial operation will be run and the actual results will be added after processing. The final summary will include the actual feature count, observed values, and findings from the four quality checks.
+
+## What Surprised Me
+
+This exercise has highlighted the importance of using a projected CRS when performing distance-based spatial analysis. A geographic CRS such as EPSG:4326 uses degrees rather than metres for coordinates, so it is not appropriate for directly interpreting a distance such as 5 km.
+
+## Data Still Needed
+
+I still need to complete the spatial operation, verify the output, and finalize the map. I also need to confirm that all required datasets are complete and suitable for answering the remaining parts of my spatial analysis question.
