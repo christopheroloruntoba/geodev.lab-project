@@ -53,4 +53,3 @@ Week 5: set up Python, VS Code and the terminal. hello.py runs.
 
 <Oloruntoba Christopher Eyitayo> · GeoDev Lab Africa
 Learn. Build. Collaborate. Transform.
-l
