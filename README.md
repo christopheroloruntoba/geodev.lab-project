@@ -47,6 +47,10 @@ The data is not in this repository. Every source is linked in
 - [ ] Week 4, first spatial analysis, checked four ways
 
 ---
+## Month 2: development environment and early Python
+
+Week 5: set up Python, VS Code and the terminal. hello.py runs.
 
 <Oloruntoba Christopher Eyitayo> · GeoDev Lab Africa
 Learn. Build. Collaborate. Transform.
+l
