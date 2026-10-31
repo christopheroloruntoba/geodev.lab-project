@@ -58,6 +58,14 @@ Week 6: set up the project with uv and added pandas. check.py prints the pandas 
 
 Week 7: analyse.py reads wards.csv, converts each area and classifies each ward.
 
+Week8: inspect_data.py summarises depth and yield in my Oyo boreholes data.
+
+Week 9: Python data analysis capstone: Built a reusable Python data analysis script using functions to read CSV files, clean data, calculate summary statistics, and generate reports.
+
+### Month 2 Reflection
+
+One idea that finally clicked for me this month is how to use Python functions to break a programme into smaller, reusable tasks. I now understand how to read CSV files, clean data, and calculate descriptive statistics using Python. I am still working on understanding how to handle different data types and combine functions effectively when analysing datasets. My capstone project has shown me that my Month 1 data can be organised, cleaned, and analysed to produce meaningful information that supports geospatial analysis and decision-making.
+
 
 <Oloruntoba Christopher Eyitayo> · GeoDev Lab Africa
 Learn. Build. Collaborate. Transform.
