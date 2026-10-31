@@ -40,11 +40,10 @@ The data is not in this repository. Every source is linked in
 [the project brief](docs/01-project-brief.md), so anyone can fetch it.
 
 ## Progress
-
-- [x] Week 1, project brief with a source link for every dataset
-- [ ] Week 2, data downloaded, opened and described
-- [ ] Week 3, reprojected, clipped and quality checked
-- [ ] Week 4, first spatial analysis, checked four ways
+Week 1, project brief with a source link for every dataset
+Week 2, data downloaded, opened and described
+Week 3, reprojected, clipped and quality checked
+Week 4, first spatial analysis, checked four ways
 
 ---
 ## Month 2: development environment and early Python
